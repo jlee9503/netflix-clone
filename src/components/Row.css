@@ -1,10 +1,15 @@
+.row {
+	background-color: #000;
+	color: #fff;
+}
+
 .row_title {
 	padding: 20px 0 0 20px;
 }
 
 .posters {
 	display: flex;
-	padding: 20px;
+	padding: 25px;
 	overflow-x: scroll;
 	overflow-y: hidden;
 }
@@ -15,12 +20,18 @@
 
 .poster {
 	width: 100%;
-	max-width: 100px;
+	max-width: 160px;
 	object-fit: contain;
 	transition: transform 0.3s;
-	margin-right: 10px;
+	margin-right: 14px;
 }
 
 .poster:hover {
 	transform: scale(1.15);
+}
+
+.poster_large {
+	width: 100%;
+	max-width: 165px;
+	margin-right: 16px;
 }

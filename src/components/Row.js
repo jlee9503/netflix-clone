@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "../axios";
 import "./Row.css";
 
-function Row({ title, fetchURL }) {
+function Row({ title, fetchURL, largePoster }) {
 	const [movies, setMovies] = useState([]);
 
 	useEffect(() => {
@@ -23,10 +23,12 @@ function Row({ title, fetchURL }) {
 			<div className="posters">
 				{movies.map((movie) => (
 					<img
-						key={movie.id}
-						className="poster"
-						src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
-						alt={movie.name}
+						key={movie?.id}
+						className={`poster ${largePoster && `poster_large`}`}
+						src={`https://image.tmdb.org/t/p/original/${
+							largePoster ? movie?.poster_path : movie?.backdrop_path
+						}`}
+						alt={movie?.name}
 					/>
 				))}
 			</div>
