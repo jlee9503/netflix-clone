@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Banner.css";
 import axios from "../axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretRight, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function Banner({ fetchURL }) {
 	const [movie, setMovie] = useState([]);
@@ -41,8 +43,12 @@ function Banner({ fetchURL }) {
 
 				{/* Buttons */}
 				<div className="banner_buttons">
-					<button>Play</button>
-					<button>My List</button>
+					<button>
+						Play <FontAwesomeIcon icon={faCaretRight} className="play-button" />
+					</button>
+					<button>
+						My List <FontAwesomeIcon icon={faPlus} className="play-button" />
+					</button>
 				</div>
 
 				{/* Description */}

@@ -22,7 +22,7 @@
 .banner_buttons > button {
 	margin-right: 20px;
 	margin-bottom: 25px;
-	padding: 5px 25px;
+	padding: 5px 20px;
 	font-weight: 700;
 	font-size: 18px;
 	background-color: rgba(50, 50, 50, 0.5);
@@ -36,14 +36,20 @@
 	background-color: rgba(10, 10, 10, 0.8);
 }
 
+.play-button {
+	margin-left: 8px;
+	padding-top: 2px;
+	font-size: 20px;
+}
+
 .banner_description {
 	max-width: 450px;
 	font-weight: 300;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 
 .fading_effect {
-	height: 9em;
+	height: 9.8em;
 	background-image: linear-gradient(
 		to bottom,
 		transparent,
