@@ -1,24 +1,27 @@
 .navbar {
+	width: 100%;
 	background-color: transparent;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 18px;
+	padding: 18px;
+	z-index: 999;
+	transition: all 0.3s ease-in;
+}
+
+.navbar-black {
+	background-color: #000;
 }
 
 .nav-logo {
 	width: 110px;
 	object-fit: contain;
-	position: fixed;
-	left: 20px;
 	cursor: pointer;
 }
 
 .login-profile {
-	width: 48px;
-	height: 40px;
+	width: 45px;
+	height: 29.75px;
 	object-fit: contain;
-	position: fixed;
-	right: 20px;
 	cursor: pointer;
 }
